@@ -1,5 +1,5 @@
 image: Ubuntu1804
-stack: nodejs 22.13.0
+stack: node 12
 branches:
   only:
     - main
