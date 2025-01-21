@@ -1,5 +1,5 @@
 image: Ubuntu1804
-stack: node 22.13.0
+stack: node 16
 branches:
   only:
     - main
