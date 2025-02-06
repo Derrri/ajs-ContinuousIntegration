@@ -1,4 +1,4 @@
-export function calculateTotal(purchases, applyDiscount) {
+function calculateTotal(purchases, applyDiscount) {
     const sum = purchases.reduce((total, item) => {
         return total + (item.count * item.price);
     }, 0);
@@ -8,4 +8,6 @@ export function calculateTotal(purchases, applyDiscount) {
     }
     return sum;
 }
+
+module.exports = calculateTotal;
 

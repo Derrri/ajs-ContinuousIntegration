@@ -1,4 +1,4 @@
-import calculateCashback from "../cashback";
+const calculateCashback = require ("../cashback");
 
 test('cashback at sum: 500', () => {
     const result = calculateCashback(500);

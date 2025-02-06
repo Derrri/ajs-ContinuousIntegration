@@ -1,3 +1,5 @@
-export function httpGet () {
+function httpGet () {
     return'{}';
 }
+
+module.exports = httpGet;

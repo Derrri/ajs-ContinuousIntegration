@@ -1,5 +1,5 @@
-import loadUser from "../loadUser";
-import { httpGet } from "../http";
+const loadUser = require  ("../loadUser");
+const httpGet = require ("../http");
 jest.mock('../http');
 
 beforeEach(() => {
@@ -29,7 +29,7 @@ test('httpGet should be called and return mocked value', () => {
 
 // Новый тест для вызова оригинальной функции
 test('httpGet original function should return "{}"', () => {
-    const originalHttpGet = jest.requireActual('../http').httpGet;
+    const originalHttpGet = jest.requireActual('../http');
     const result = originalHttpGet(); // Вызов оригинальной функции
 
     expect(result).toBe('{}'); // Проверяем, что возвращаемое значение соответствует ожидаемому
